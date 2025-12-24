@@ -11,7 +11,7 @@
 | **UI Kit**     | **Shadcn UI**       | Headless architecture. Full ownership of component code.                |
 | **State**      | **Zustand**         | Minimalist client state (Auth, Theme).                                  |
 | **Async Data** | **TanStack Query**  | Manages server state (caching, deduplication) separately from UI state. |
-| **Routing**    | **React Router v6** | Utilizing the **Data Router** pattern (Loaders/Actions).                |
+| **Routing**    | **React Router v7** | Utilizing the **Data Router** pattern (Loaders/Actions).                |
 | **Forms**      | **React Hook Form** | Uncontrolled components for optimal performance.                        |
 | **Validation** | **Zod**             | Schema-first validation shared between forms and API types.             |
 
