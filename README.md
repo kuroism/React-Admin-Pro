@@ -11,7 +11,8 @@
 
 ## ✨ Features
 
-todo
+- **Authentication & Authorization** - Role-based access control with protected routes
+- **Permissions Management** - Create, edit, and delete permissions with type (page/action) and unique identifier
 
 ## 🚀 Getting Started
 

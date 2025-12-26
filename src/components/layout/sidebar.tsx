@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { cn } from '@/lib/utils'
-import { LayoutDashboard, Users, Settings, LogOut, X } from 'lucide-react'
+import { LayoutDashboard, Users, LogOut, X, Shield } from 'lucide-react'
 import { useUIStore } from '@/stores/ui-store'
 import { useAuthStore } from '@/stores/auth-store'
 import { Button } from '@/components/ui/button'
@@ -24,9 +24,9 @@ const navItems: NavItem[] = [
     icon: Users,
   },
   {
-    title: 'Settings',
-    href: '/settings',
-    icon: Settings,
+    title: 'Roles',
+    href: '/roles',
+    icon: Shield,
   },
 ]
 
