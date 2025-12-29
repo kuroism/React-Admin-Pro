@@ -11,12 +11,13 @@ interface Permission {
   updatedAt: string
 }
 
+// Export permissions array so it can be used by other handlers
 // eslint-disable-next-line prefer-const
-let permissions: Permission[] = [
+export let permissions: Permission[] = [
   {
     id: '1',
     name: 'Dashboard Access',
-    identifier: 'dashboard:read',
+    identifier: 'dashboard',
     type: 'page',
     description: 'Access to view the dashboard page',
     createdAt: '2024-01-01T00:00:00Z',
@@ -25,7 +26,7 @@ let permissions: Permission[] = [
   {
     id: '2',
     name: 'User Management',
-    identifier: 'users:read',
+    identifier: 'users',
     type: 'page',
     description: 'Access to view users page',
     createdAt: '2024-01-01T00:00:00Z',

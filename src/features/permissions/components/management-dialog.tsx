@@ -1,13 +1,7 @@
 import { useState } from 'react'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { Pencil, Trash2, Plus } from 'lucide-react'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 import {
   Table,
@@ -76,9 +70,6 @@ export function PermissionsManagementDialog({
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Permissions Management</DialogTitle>
-          <DialogDescription>
-            Create, edit, and delete permissions. Each permission has a unique identifier.
-          </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">

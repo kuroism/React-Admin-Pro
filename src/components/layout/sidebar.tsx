@@ -1,10 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
 import { cn } from '@/lib/utils'
-import { LayoutDashboard, Users, LogOut, X, Shield } from 'lucide-react'
+import { LayoutDashboard, Users, X, Shield } from 'lucide-react'
 import { useUIStore } from '@/stores/ui-store'
-import { useAuthStore } from '@/stores/auth-store'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
 
 interface NavItem {
   title: string
@@ -33,12 +31,6 @@ const navItems: NavItem[] = [
 export function Sidebar() {
   const location = useLocation()
   const { sidebarOpen, setSidebarOpen } = useUIStore()
-  const { logout } = useAuthStore()
-
-  const handleLogout = () => {
-    logout()
-    setSidebarOpen(false)
-  }
 
   // 改进的路径匹配函数
   const isActiveRoute = (href: string) => {
@@ -81,15 +73,6 @@ export function Sidebar() {
                 )
               })}
             </ul>
-            <Separator className="my-4" />
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-muted-foreground"
-              onClick={handleLogout}
-            >
-              <LogOut className="mr-2 h-4 w-4" />
-              Logout
-            </Button>
           </nav>
         </div>
       </aside>
@@ -133,15 +116,6 @@ export function Sidebar() {
                 )
               })}
             </ul>
-            <Separator className="my-4" />
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-muted-foreground"
-              onClick={handleLogout}
-            >
-              <LogOut className="mr-2 h-4 w-4" />
-              Logout
-            </Button>
           </nav>
         </div>
       </aside>
